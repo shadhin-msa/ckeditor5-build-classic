@@ -28,6 +28,7 @@ import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
+import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -54,7 +55,8 @@ ClassicEditor.builtinPlugins = [
 	Paragraph,
 	PasteFromOffice,
 	Table,
-	TableToolbar
+	TableToolbar,
+	Strikethrough
 ];
 
 // Editor configuration.
@@ -65,6 +67,7 @@ ClassicEditor.defaultConfig = {
 			'|',
 			'bold',
 			'italic',
+			'strikethrough',
 			'link',
 			'bulletedList',
 			'numberedList',
